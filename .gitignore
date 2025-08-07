@@ -1,11 +1,28 @@
+# IDE settings
 .vscode/
 .DS_Store
+
+# Python
 __pycache__/
-*-checkpoint.ipynb
-.venv
 *.egg*
-build/*
+build/
+
+# Jupyter
+*-checkpoint.ipynb
+
+# Compiled or Cython
 _C.*
-outputs/*
-checkpoints/*.pt
+
+# Outputs and model files
+outputs/
+checkpoints/
 demo/backend/checkpoints/*.pt
+
+# Virtual environments
+**env**/
+
+# SLURM output logs
+slurm*.out
+
+# Excess files I dont't want to track
+Excess_files/
